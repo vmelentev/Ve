@@ -1,6 +1,16 @@
 {
   "expo": {
     "name": "cam",
+    "plugins": [
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "Vectorun needs access to your camera.",
+          "enableFrameProcessors": true
+        }
+      ],
+      "react-native-fast-tflite"
+    ],
     "slug": "cam",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -15,16 +25,29 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.valdd.cam",
+      "infoPlist": {
+        "NSCameraUsageDescription": "$(PRODUCT_NAME) needs access to your Camera."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.CAMERA"
+      ],
+      "package": "com.valdd.cam"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6208a00a-70c3-41aa-b2a9-67ac4f0f4bb5"
+      }
     }
   }
 }

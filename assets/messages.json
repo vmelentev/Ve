@@ -1,0 +1,44 @@
+[
+    {
+        "id" : 0,
+        "name" : "Foot strike pattern",
+        "description" : "Foot-strike pattern refers to which part of your foot is the first point of contact with the ground with every step you take while running. It is recommended that you use a mid or a forefoot strike pattern as a rearfoot strike pattern (striking the ground with the heel) makes you less efficient and places additional stress on your body and can result in knee injuries",
+        "textGood" : "It appears as though you are not using a rearfoot strike pattern, meaning your risk of injury is minimised. Keep it up!",
+        "textBad" : "It appears as though you are using a rearfoot strike pattern, placing you at a high risk of injury. Aim to land with the ball of your foot and consider leaning forward more while running without bending at your waist to correct your technique."
+    },
+    {
+        "id" : 1,
+        "name" : "Knee rotation",
+        "description" : "Knee rotation refers to where your knees are pointed while you run. Interal knee rotation (knees pointing inwards) is to be avoided as it places additional stress on the iliotibial band which increaces the risk of injury",
+        "textGood" : "It appears as though your knees are in a neutral position, meaning your risk of injury is minimised. Keep it up!",
+        "textBad": "it appears as though your knees are interanlly rotated, placing you at a high risk of injury. Aim to keep your knees in a neutral position (pointing forward) and consider doing exercises which strengthen the glute muscles to improve your lower body posture."
+    },
+    {
+        "id" : 2,
+        "name" : "Pelvic tilt",
+        "description" : "Pelvic tilt happens when your pelvic muscles lean towards one side. Anteriour pelvic tilt is to be avoided as it places additional stress on the iliotibial band and can lead to other postural issues such as internal knee rotation.",
+        "textGood": "It appears as though your pelvis is in a neutral position, minimmising your risk of injury. Keep it up!",
+        "textBad" : "It appears as though you have anteriour pelvic tilt, placing you at a high risk of injury. Aim to keep drive forward with your hips while running and consider doing exercises which strengthen the glute muscles to improve your posture"
+    },
+    {
+        "id" : 3,
+        "name" : "Cadence",
+        "description" : "Cadence refers to the number of steps you take a minute. Lower cadence per minute (<180) indicates that you are taking longer strides with each step while running, which places additional stress on your body and may cause stress fractures, particularly at the tibial bone.",
+        "textGood": "You have a high cadence of around 180, which minimised your risk of injury. Keep it up!",
+        "textBad" : "You have a low cadence meaning that your stride length is higher, placing you at a high risk of injury. Gradually take shorter steps while running to increase cadence and minimise risk of injury."
+    },
+    {
+        "id" : 4,
+        "name" : "Head position",
+        "description" : "Head position is where your head is pointing while you run. Some runners tend to lift their chin up while running. As the human head weighs around 5kg, this shifts a runners weight backwards, slowing them down and placing additional stress on the neck",
+        "textGood": "It appears as though you are looking straight ahead and not craining you head back, meaning that your posture is optimal. Keep it up!",
+        "textBad" : "It appears as though you are lifting your head back which is can strain your neck and kill your momentum. Try to look straight ahead with your eyes fixed at the horizon to correct this."
+    },
+    {
+        "id" : 5,
+        "name" : "Shoulder position",
+        "description" : "Shoulder position refers to whether or not your shoulder are rounded forward or not. Rounding your shoulders contrains your respiratory system which kills you stamina and contributes to other postural problems while running",
+        "textGood": "Your shoulders are down and back and your posture is optimal. Keep it up!",
+        "textBad" : "It appears as though your shoulders are rounded forward which is killing you stamina and is probably contributing to other postural problems. Squeeze your shoulder blades together by rolling your shoulders up, back and down. Consider doing exercises which strengthen upper back muscles."
+    }
+]
