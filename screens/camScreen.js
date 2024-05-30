@@ -166,7 +166,7 @@ const Cam = ({ route, navigation }) => {
       <TouchableOpacity onPress={record} style={{backgroundColor: recording? 'white' : 'red', width: recording? 75 : 60, height: recording? 75 : 60, bottom: -810, borderRadius: recording? 100 : 15}}/> 
 
       <TouchableOpacity style={{width: 30, height:30, borderRadius: 100, marginBottom: 825, marginRight: 350, backgroundColor: 'white'}} onPress={() => navigation.goBack()}>
-        <Image style={{marginLeft:3.5 ,marginTop: 4.5, width:20, height:20}} source={require('../assets/backArrow.png')}/>
+        <Image style={{marginLeft:3.5, marginTop: 4.5, width:20, height:20}} source={require('../assets/backArrow.png')}/>
       </TouchableOpacity>
     </View>
   )

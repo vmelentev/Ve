@@ -22,6 +22,7 @@ const Desc = ({route, navigation}) => {
     //displays message
     return (
         <View style={{ flex: 1, alignItems:'center', paddingTop:60}}>
+            <Image source={require('../assets/background.jpg')} style={{position: 'absolute', width: '100%', height: '100%'}}/>
             <TouchableOpacity style={{paddingRight: 360}} onPress={() => navigation.goBack()}>
                 <Image style={{width:20, height:20}} source={require('../assets/backArrow.png')}/>
             </TouchableOpacity>
