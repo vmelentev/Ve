@@ -152,7 +152,7 @@ const Cam = ({ route, navigation }) => {
 
   if (device == null) return <NoCameraDeviceError/>
   return (
-    <View style={{ flex: 1, alignItems:'center', justifyContent:'center' }}>
+    <View style={styles.camera}>
       <Camera
         ref={camera}
         style={StyleSheet.absoluteFill}
@@ -165,12 +165,34 @@ const Cam = ({ route, navigation }) => {
 
       <TouchableOpacity onPress={record} style={{backgroundColor: recording? 'white' : 'red', width: recording? 75 : 60, height: recording? 75 : 60, bottom: -810, borderRadius: recording? 100 : 15}}/> 
 
-      <TouchableOpacity style={{width: 30, height:30, borderRadius: 100, marginBottom: 825, marginRight: 350, backgroundColor: 'white'}} onPress={() => navigation.goBack()}>
-        <Image style={{marginLeft:3.5, marginTop: 4.5, width:20, height:20}} source={require('../assets/backArrow.png')}/>
+      <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
+        <Image style={styles.backArrowImage} source={require('../assets/backArrow.png')}/>
       </TouchableOpacity>
     </View>
   )
 }
+
+styles = StyleSheet.create({
+  camera: {
+    flex: 1, 
+    alignItems:'center', 
+    justifyContent:'center'
+  },
+  backButton: {
+    width: 30, 
+    height:30, 
+    borderRadius: 100, 
+    marginBottom: 825, 
+    marginRight: 350, 
+    backgroundColor: 'white'
+  },
+  backArrowImage: {
+    marginLeft:3.5, 
+    marginTop: 4.5, 
+    width:20, 
+    height:20
+  }
+})
 
 export default Cam;
 

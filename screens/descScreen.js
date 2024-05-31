@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { View, Text, TouchableOpacity, Image } from 'react-native';
+import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import data from '../assets/messages.json';
 
 const Desc = ({route, navigation}) => {
@@ -21,16 +20,54 @@ const Desc = ({route, navigation}) => {
 
     //displays message
     return (
-        <View style={{ flex: 1, alignItems:'center', paddingTop:60}}>
-            <Image source={require('../assets/background.jpg')} style={{position: 'absolute', width: '100%', height: '100%'}}/>
+        <View style={styles.container}>
+
+            <Image source={require('../assets/background.jpg')} style={styles.backgroundImage}/>
+
             <TouchableOpacity style={{paddingRight: 360}} onPress={() => navigation.goBack()}>
                 <Image style={{width:20, height:20}} source={require('../assets/backArrow.png')}/>
             </TouchableOpacity>
-            <Text>{attribute}</Text>
-            <Text style={{marginTop: 30, paddingLeft:25, paddingRight:25}}>{description}</Text>
-            <Text style={{marginTop: 30, paddingLeft:25, paddingRight:25}}>{assessment}</Text>
+
+            <Text style={styles.titleText}>{attribute}</Text>
+            <View style={styles.separator}/>
+            <Text style={styles.text}>{description}</Text>
+            <Text style={styles.text}>{assessment}</Text>
         </View>
     )
 }
+
+styles = StyleSheet.create ({
+    container: {
+        flex: 1, 
+        alignItems:'center', 
+        paddingTop:60
+    },
+    backgroundImage: {
+        position: 'absolute', 
+        width: '100%', 
+        height: '100%'
+    }, 
+    titleText: {
+        marginTop: 30, 
+        paddingLeft:25, 
+        paddingRight:25,
+        fontWeight: 'bold',
+        fontSize: 42
+    },
+    text: {
+        marginTop: 25, 
+        paddingLeft:25, 
+        paddingRight:25,
+        fontWeight: 'bold',
+        alignSelf: 'left'
+    },
+    separator: {
+        marginTop: 20, 
+        height:3, 
+        width: '90%', 
+        backgroundColor: 'midnightblue', 
+        borderRadius: 10
+    }
+})
 
 export default Desc;
